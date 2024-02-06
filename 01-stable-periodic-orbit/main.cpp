@@ -11,7 +11,7 @@ using namespace capd;
  * 1) Fix Poincare section Pi = {(x,0) : x\in R}
  * 2) Take an interval X=([x1,x2],0) \subset Pi
  * 3) Show that P(X)\subset X (existence validated)
- * 4) Show that |\partial P/\parial x (X)|<1 and thus the orbit is stable
+ * 4) Show that |\partial P/\partial x (X)|<1 and thus the orbit is stable
  * 
 */
 
