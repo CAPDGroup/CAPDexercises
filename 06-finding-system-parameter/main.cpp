@@ -52,7 +52,7 @@ int main(){
   
   // Hint 
   // 1) Use vf to compute vector field at a given point, for example
-  cout << f(u0) << endl;
+  cout << vf(u0) << endl;
   
   // #include "solution.h"
 }
