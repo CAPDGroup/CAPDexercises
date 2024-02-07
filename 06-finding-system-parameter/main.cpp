@@ -9,7 +9,7 @@ using namespace capd;
  * 
  * Consider a model of boat traveling through the river of width 2L: y\in[-L,L]
  *  
- * We assume that the current of the river is given by v(y) = cos(y\pi/(2L)).
+ * We impose that the current of the river is given by v(y) = cos(y\pi/(2L)).
  * The boat has constant velocity v but in the direction specified by the angle \alpha
  * 
  * Problem: 
@@ -23,7 +23,7 @@ using namespace capd;
  *  3) We have to solve equation 
  *        x(T) = x(2L/(v\sin\alpha)) = x1
  *  4) Apply interval Newton method to:
- *     f(a) = \phi_x(T(a),(x0,-L,a)) - x1 = 0
+ *     f(\alpha) = \phi_x(T(\alpha),(x0,-L,\alpha)) - x1 = 0
  * 
  * Data:
  *    L = 1
