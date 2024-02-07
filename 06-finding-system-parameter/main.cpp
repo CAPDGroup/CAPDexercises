@@ -50,8 +50,8 @@ int main(){
   interval T = 2.0/sin(a);
   cout << tm(T,s) << endl; // the x-component of the result is almost x1=10 
   
-  // Hint solve parameter for "a" using interval Newton method
-  // 1) Use vf to compute vector field at given point, for example
+  // Hint 
+  // 1) Use vf to compute vector field at a given point, for example
   cout << f(u0) << endl;
   
   #include "solution.h"
