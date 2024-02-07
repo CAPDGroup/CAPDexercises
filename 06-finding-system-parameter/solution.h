@@ -1,13 +1,13 @@
 // Solution  
 {
-  double e = 1e-6;
-  C0Rect2Set s0(IVector{x0,-L,a});
-  interval xT = tm(2.0/sin(a),s0)[0] - x1;
+  double e = 1e-11;
+  C0HORect2Set s0(IVector{x0,a});
+  interval xT = tm(2.0*L/(v*sin(a)),s0)[0] - x1;
   
   interval A = a+interval(-e,e);
-  C1Rect2Set s1(IVector{x0,-L,A});
-  IVector z = tm(2.0/sin(A),s1);
-  interval dT = -2.*vf(z)[0]*cos(A)/sqr(sin(A)) + ((IMatrix)s1)[0][2];
+  C1HORect2Set s1(IVector{x0,A});
+  IVector z = tm(2.0*L/(v*sin(A)),s1);
+  interval dT = vf(z)[0]*(-2.*L/v)*cos(A)/sqr(sin(A)) + ((IMatrix)s1)[0][1];
   
   interval N = -xT/dT;
   cout << "Bound for a: " << a + N << endl;
