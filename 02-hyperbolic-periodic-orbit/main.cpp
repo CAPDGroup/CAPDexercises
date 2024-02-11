@@ -5,18 +5,8 @@ using namespace capd;
 
 /**
  * EXERCISE:
- * Show the existence of a periodic orbit near an approximate PO and show it is hyperbolic
- * 
- * Rossler system:
- *   x' = -(y+z),  y' = x+b*y,   z' = b+z*(x-a),  a = 5.7,   b = 0.2
- * 
- * Methodology:
- * 1) Define Poincare map P: Pi\to Pi
- *    where the section is Pi = { (0,y,z) : y,z \in R}
- * 2) Apply the interval Newton method to equation
- *      f(y,z) = P(y,z)-(y,z)
- * 3) Check eigenvalues of DP using simply Gershgorin estimate
- * 
+ * Show the existence of a hyperbolic periodic orbit for the Roessler system. 
+ * See README.md for description of the problem.
 */
 
 int main(){
