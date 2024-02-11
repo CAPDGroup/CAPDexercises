@@ -6,8 +6,9 @@
   
   interval A = a+interval(-e,e);
   C1HORect2Set s1(IVector{x0,A});
-  IVector z = tm(2.0*L/(v*sin(A)),s1);
-  interval dT = vf(z)[0]*(-2.*L/v)*cos(A)/sqr(sin(A)) + ((IMatrix)s1)[0][1];
+  T = 2.0*L/(v*sin(A));
+  IVector z = tm(T,s1);
+  interval dT = vf(T,z)[0]*(-2.*L/v)*cos(A)/sqr(sin(A)) + ((IMatrix)s1)[0][1];
   
   interval N = -xT/dT;
   cout << "Bound for a: " << a + N << endl;

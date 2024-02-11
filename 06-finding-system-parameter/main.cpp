@@ -52,7 +52,7 @@ int main(){
   // Approximate parameter:
   interval a = 1.9058939019661396;
   IVector u0{x0,a};
-  C0Rect2Set s(u0);
+  C0HORect2Set s(u0);
   interval T = 2.0*L/(v*sin(a));
   cout << "approximation: " << tm(T,s) << endl; // the x-component of the result is almost x1=10 
   
