@@ -6,7 +6,8 @@
  ## Methodology:
  - Fix Poincare section $`\Pi = \{(x,0) : x>0\}`$
  
-   ![](attracting-periodic-orbit.png)
+![](attracting-periodic-orbit.png)
+   
  - Take an interval $`X=([x_1,x_2],0) \subset \Pi`$ that apparently contains a fixed point for $`P`$
  - Show that $`P(X)\subset X`$ - this validates the existence of a fixed point
  - Finally show that $`|\frac{\partial P}{\partial x} (X)|<1`$ and thus the orbit is stable
