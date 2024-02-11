@@ -3,7 +3,7 @@
 
  $`x' = -(y+z),\quad  y' = x+b*y,\quad   z' = b+z*(x-a),\quad  a = 5.7,\quad   b = 0.2`$
  
- ![](Roessler3d.png) 
+![](Roessler3d.png) 
 
 ## Methodology:
 
@@ -18,7 +18,7 @@
     
   If succeed, The existence of a periodic orbit is validated. 
   
-  ![](periodic-orbit.png)
+![](periodic-orbit.png)
  
 - Check eigenvalues of $`DP`$ using simply Gershgorin estimate to show the orbit is hyperbolic
 
