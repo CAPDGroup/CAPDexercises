@@ -25,7 +25,7 @@ int main(){
   IC2TimeMap tm(solver);
   
   // Approximate parameter:
-  interval a =  2.471354375614129;
+  interval a =  2.4741354375614257;
   IVector u0{x0,a};
   interval T = k/sin(a);
   
