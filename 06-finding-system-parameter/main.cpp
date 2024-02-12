@@ -6,33 +6,7 @@ using namespace capd;
 /**
  * EXERCISE:
  * Find parameter of a system subject to some constraint.
- * 
- * Consider the model of a boat traveling through a river of width 2L: y\in[-L,L]
- *  
- * We impose that the current of the river is given by V(x,y) = (cos(y\pi/(2L)),0).
- * The boat has constant velocity v but in the direction specified by the angle \alpha
- * 
- * Problem: 
- *    Find constant \alpha such that the boat starting from x(0)=x0, y(0)=-L reaches the point x(T)=x1 and y=L for some T>0.
- * 
- * Methodology:
- *  1) The boat is travelling in y-direction with constant velocity v\sin\alpha. 
- *     Thus y(t) = -L + t*v\sin\alpha
- *     and the travelling time to a point y(t)=L must be T=2L/(v\sin\alpha)
- *  2) The motion in x-direction is modeled by a nonatunomous equation
- *        x' = cos(y\pi/(2L)) + v\cos\alpha
- *           = cos( (t*v\sin\alpha-L)*\pi/(2L) ) + v\cos\alpha
- *  3) We have to solve the equation 
- *        x(2L/(v\sin\alpha)) = x1
- *     for \alpha.
- *  4) Apply interval Newton method to:
- *     f(\alpha) = \phi(T(\alpha),x0) - x1 = 0
- * 
- * Data:
- *    L = 1
- *    v = 0.5
- *    x0 = 0, y0 = -L
- *    x1 = 2, y1 = L
+ * For detailed description of the problem see README.md file
 */
 
 int main(){

@@ -6,24 +6,8 @@ using namespace capd;
 /**
  * EXERCISE:
  * Check, that a set of trajectories over an explicit time range does not hit an obstacle.
+ * For detailed description see README.md
  * 
- * Methodology:
- *  1) "Record" solutions to IVP as a SolutionCurve object
- *  2) Subdivide time range and check the required constraint (avoiding obstacle) for each time-subinterval
- * 
- * The Michelson system:
- *   x'=y, y'=z, z'= c^2 - y - \frac{1}{2}x^2,   c = 1/8
- * 
- * IVP:
- *   x(0) = 0
- *   y(0) = -0.125 + e, 
- *   z(0) = e, 
- *   e \in 10^{-4}*[-1,1]  
- * 
- * Constraint for the Euclidean norm along the solution:
- *   | (x(t),y(t),z(t))| >= 0.1
- * for
- *   t \in [0,100]
 */
 
 int main(){
