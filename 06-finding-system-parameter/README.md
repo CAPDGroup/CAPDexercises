@@ -3,7 +3,7 @@
 
 - Consider the model of a boat traveling through a river of width $`2L: y\in[-L,L]`$.
 - We impose that the current of the river is given by $`V(x,y) = (\cos(y\pi/(2L)),0)`$.
-- The boat has constant velocity $`v`$ but in the direction specified by the angle $`\alpha`$
+- The boat has constant velocity $`v`$ but in the direction specified by the angle $`\alpha`$, that is $`\vec{v}=v(\cos\alpha,\sin\alpha)`$
 
 ## Problem: 
 
