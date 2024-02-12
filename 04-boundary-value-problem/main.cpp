@@ -5,23 +5,8 @@ using namespace capd;
 
 /**
  * EXERCISE:
- * Validate the existence of a solution to a BVP u(0)=u0, u(T)=u1 for a 2DOF Henon-Heiles hamiltonian:
- *   x" = -x*(1+2*y),     y" = y*(y-1)-x^2 
- *  where u=(x,y).
- * 
- * Methodology:
- *   Solve equation 
- *      F(u'(0)) := \pi_u\phi(T,(u0,u'(0)))-u1 = 0
- *   for u'(0) using for example the Interval Newton Method,
- *   where 
-        \pi_u is the projection onto u-coordinate 
- *   and
- *      \phi(t,u,u') is the underlying flow.
- * 
- * BVP:
- *  T  = 1
- *  u(0) = (1,0)
- *  u(T) = (0,1)
+ * Validate the existence of a solution to a BVP for a 2DOF Henon-Heiles hamiltonian.
+ * For detailed description see README.md file.
 */
 
 int main(){

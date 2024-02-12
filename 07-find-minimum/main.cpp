@@ -5,32 +5,8 @@ using namespace capd;
 
 /**
  * EXERCISE:
- * 
- * This is a continuation od exercise 06-finding-system-parameter, 
- * so please read first its description.
- * 
- * Assume additionally, that the current of river is larger than the velocity of the boat.
- * Then, the boat must be drifted and there is a minimal recheable point (x1,L) by the boat.
- * Here we find a local minium, only.
- * 
- * Problem:
- *    Find (local) minumum x1(\alpha) and find control parameter (\alpha) for which this minimum is taken.    
- * 
- * Methodology:
- *  1) The motion in x-direction is modeled by a nonatunomous equation
- *        x' = cos(y\pi/(2L)) + v\cos\alpha
- *           = cos( (t*v\sin\alpha-L)*\pi/(2L) ) + v\cos\alpha
- *  3) We would like to find minimum of 
- *        g(\alpha) = \phi(T(\alpha),x0)
- *     or zero of its derivative
- *  4) It would be be helpful to have second order derivatives of g, 
- *     that involve second order variational equations to be solved.
- *  
- * Data:
- *    L = 1
- *    v = 0.5
- *    x0 = 0, y0 = -L
- *    x1 = 2, y1 = L
+ * Find parameter of a system that minimizes certain property of this system
+ * For detailed description see README.md file.
 */
 
 int main(){

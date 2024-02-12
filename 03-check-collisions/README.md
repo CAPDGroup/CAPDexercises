@@ -11,9 +11,7 @@ The goal is to show, that all trajectories with the initial conditions satisfyin
 
   $`\begin{array}{rcl}  x(0) &=& 0\\ y(0) &=& -0.125 + e_1\\ z(0) &=& e_2, \end{array}`$
   
-where $`e_1,e_2 \in 10^{-4}[-1,1]`$ exists for $`t\in[0,100]`$. Moreover,
-
-**Constraint for the Euclidean norm along the solution:**
+where $`e_1,e_2 \in 10^{-4}[-1,1]`$ exists for $`t\in[0,100]`$. Moreover, the following **constraint for the Euclidean norm along the solution is satisfied**
 
 $`\| (x(t),y(t),z(t))\| >= 0.1,\quad t \in [0,100]`$
 
