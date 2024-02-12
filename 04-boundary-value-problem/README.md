@@ -1,5 +1,5 @@
 # EXERCISE:
-**Validate the existence of a solution to a BVP for a 2DOF Henon-Heiles hamiltonian.**
+**Validate the existence of a solution to a BVP for a 2DOF hamiltonian.**
 
 ### Problem description:
 The Henon-Heiles hamiltonian is given by 
