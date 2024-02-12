@@ -23,7 +23,7 @@ Find constant $`\alpha`$ such that the boat starting from $`x(0)=x_0, y(0)=-L`$ 
   
 - The motion in $`x`$-direction is modeled by a nonatunomous equation
 
-  $`\begin{array}{rcl}x' &=& \cos(y\pi/(2L)) + v\cos\alpha \\ &=& cos( (t*v\sin\alpha-L)*\pi/(2L) ) + v\cos\alpha\end{array} `$
+  $`\begin{array}{rcl}x' &=& \cos(y\pi/(2L)) + v\cos\alpha \\ &=& cos( (tv\sin\alpha-L)\pi/(2L) ) + v\cos\alpha\end{array} `$
   
 - We have to solve the equation 
 
