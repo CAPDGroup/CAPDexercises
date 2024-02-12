@@ -16,7 +16,7 @@
     
   $`f(y,z) = P(y,z)-(y,z) = 0`$
     
-  If succeed, The existence of a periodic orbit is validated. 
+  If succeed, the existence of a periodic orbit is validated. 
   
 ![](periodic-orbit.png)
  
