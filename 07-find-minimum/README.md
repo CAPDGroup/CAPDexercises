@@ -15,7 +15,7 @@ Find (local) minimum $`x_1(\alpha)`$ and find control parameter $`\alpha`$ for w
 ## Methodology:
 - The motion in $`x`$-direction is modeled by a nonatunomous ODE
 
-  $`\begin{array}{rcl}x' &=& \cos(y\pi/(2L)) + v\cos\alpha \\ &=& cos( (tv\sin\alpha-L)\pi/(2L) ) + v\cos\alpha\end{array} `$
+  $`\begin{array}{rcl}x' &=& \cos(y\pi/(2L)) + v\cos\alpha \\ &=& \cos( (tv\sin\alpha-L)\pi/(2L) ) + v\cos\alpha\end{array} `$
   
 - We would like to find minimum of 
  
@@ -30,6 +30,6 @@ Find (local) minimum $`x_1(\alpha)`$ and find control parameter $`\alpha`$ for w
   $`g'(\alpha) = 0`$
   
 ## Data:
-  $`\begin{array}{rcl}L &=& 1\\ v &=& 0.5\\ (x_0,y_0) &=& (0,-L)\\ (x_1,y_1) &=& (2,L)\end{array}`$
+  $`\begin{array}{rcl}L &=& 1\\ v &=& 0.5\\ (x_0,y_0) &=& (0,-L)\end{array}`$
 
 
