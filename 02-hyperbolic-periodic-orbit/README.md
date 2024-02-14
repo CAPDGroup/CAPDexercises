@@ -20,5 +20,5 @@
   
 ![](periodic-orbit.png)
  
-- Check eigenvalues of $`DP`$ using simply Gershgorin estimate to show the orbit is hyperbolic
+- Check eigenvalues of $`DP`$ (explicit formula) to show the point is hyperbolic
 

@@ -12,7 +12,11 @@
   IMatrix M{{DP[1][1]-1.0,DP[1][2]},{DP[2][1],DP[2][2]-1.0}};
   IVector N = - matrixAlgorithms::gauss(M,IVector{v0[1]-u0[1],v0[2]-u0[2]});
   cout << "Result: " << ( subset(N[0],r) and subset(N[1],r)) << endl;
-  // rough bounds on eigenvalues from Gershgorin estimate
-  cout << "lambda1: " << abs(DP[1][1]) + DP[1][2] << endl;
-  cout << "lambda2: " << abs(DP[2][2]) + DP[2][1] << endl;
+
+ // explicit formula for eigenvalues of a 2x2 matrix
+  interval m = 0.5*(DP[1][1]+DP[2][2]);
+  interval d = DP[1][1]*DP[2][2]-DP[1][2]*DP[2][1];
+  interval t = sqrt(sqr(m)-d);
+  cout << "lambda1=" << m-t << endl;
+  cout << "lambda2=" << m+t << endl;
 }
